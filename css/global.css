@@ -1,0 +1,10 @@
+.text-hover:hover {
+  color: #0E8EC7;
+}
+
+.btn-hover:hover {
+  background-color: #0E8EC7;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}

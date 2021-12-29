@@ -1,0 +1,9 @@
+@import 'vars';
+
+.text-hover:hover{
+  color: $button-hover;
+}
+.btn-hover:hover{
+  background-color: $button-hover;
+  transition: all .3s;
+}
