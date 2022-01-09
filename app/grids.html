@@ -14,10 +14,13 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/grids.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
+  <script src="js/swiper.js" defer></script>
 </head>
 
 <body>
-  <div class="container" style="max-width: 1440px; width: 100%; padding: 0 80px; margin: 0 auto;">
+  <div class="container">
     <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">Grid №1</div>
     <div class="grid3col">
       <div class="box">Something text</div>
@@ -39,26 +42,1212 @@
     </div>
     <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">Grid №3</div>
     <div class="grid2_1">
-      <div class="box">Something text</div>
-      <div class="box">Something text</div>
-      <div class="box">Something text</div>
-      <div class="box">Something text</div>
-      <div class="box">Something text</div>
+      <div class="box">Something text 1</div>
+      <div class="box">Something text 2</div>
+      <div class="box">Something text 3</div>
+      <div class="box">Something text 4</div>
+      <div class="box">Something text 5</div>
     </div>
     <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">Grid №4</div>
     <div class="grid1_2">
-      <div class="box">Something text</div>
-      <div class="box">Something text</div>
-      <div class="box">Something text</div>
+      <div class="box">Something text 1</div>
+      <div class="box">Something text 2</div>
+      <div class="box">Something text 3</div>
     </div>
     <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">Grid №5</div>
     <div class="grid_row">
-      <div class="box">Something text</div>
-      <div class="box">Something text</div>
-      <div class="box">Something text</div>
+      <div class="box">Something text 1</div>
+      <div class="box">Something text 2</div>
+      <div class="box">Something text 3</div>
     </div>
-    <div style="height: 100px;"></div>
   </div>
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Banner main page
+  </div>
+
+
+  <section class="banner banner__mainpage">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__wrapper-content">
+          <h1 class="banner__title">
+            Бизнес для иностранцев в Грузии
+          </h1>
+          <p class="banner__text">
+            Каждый год мы анализируем
+            экономическую ситуацию в Грузии,
+            в этот раз мы решили поделиться
+            аналитикой с вами. Скачайте анализ ниже
+          </p>
+          <button class="btn btn-hover banner__btn">
+            <img src="images/icon1-banner-mainpage.svg" alt="">
+            Скачать анализ
+          </button>
+        </div>
+        <div class="banner__wrapper-img">
+          <img src="images/banner__mainpage-img.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Banner with video
+  </div>
+
+  <section class="banner banner__video">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__wrapper-content">
+          <h1 class="banner__title">
+            Откроем компанию и счет в банке Грузии
+          </h1>
+          <p class="banner__text">
+            Специалисты Jara Accounting помогут
+            Вам пройти все этапы от регистрации
+            компании до подачи налоговых
+            деклараций и юридической поддержки.
+          </p>
+          <div class="banner__inner">
+            <video width="100%" height="auto" poster="images/banner__video-img1.png"></video>
+            <div class="play">
+              <div class="play__btn">
+                <div class="play__btn-triangle"></div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-hover banner__btn">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Simple Banner
+  </div>
+
+  <section class="banner banner__simple" style="background-image: url(images/banner__simple-bg1.png);">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__wrapper-content">
+          <h1 class="banner__title">
+            Откроем ИП с налогом
+            1% для фрилансеров
+          </h1>
+          <p class="banner__text">
+            После открытия ИП, если вы фрилансер, вам
+            нужно будет выплачивать всего 1% от оборота
+          </p>
+          <div class="banner__inner">
+            <img src="images/banner__simple-img1.png" alt="">
+          </div>
+          <button class="btn btn-hover banner__btn">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Banner with video
+  </div>
+
+  <section class="banner banner__video">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__wrapper-content">
+          <h1 class="banner__title">
+            Откроем
+            IT-компанию в Грузии
+          </h1>
+          <p class="banner__text">
+            Специалисты Jara Accounting помогут Вам открыть
+            IT-компанию в Грузии удаленно или с личным присутствием.
+          </p>
+          <div class="banner__inner">
+            <video width="100%" height="auto" poster="images/banner__video-img2.png"></video>
+            <div class="play">
+              <div class="play__btn">
+                <div class="play__btn-triangle"></div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-hover banner__btn">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Simple Banner
+  </div>
+
+  <section class="banner banner__simple" style="background-image: url(images/banner__simple-bg2.png);">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__wrapper-content">
+          <h1 class="banner__title">
+            Налоговая оптимизация
+            вашего бизнеса в Грузии
+          </h1>
+          <p class="banner__text">
+            Наши опытные консультанты помогут вам
+            сформировать налоговую политику компании
+          </p>
+          <div class="banner__inner">
+            <img src="images/banner__simple-img2.png" alt="">
+          </div>
+          <button class="btn btn-hover banner__btn">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Simple Banner
+  </div>
+
+  <section class="banner banner__simple" style="background-image: url(images/banner__simple-bg3.png);">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__wrapper-content">
+          <h1 class="banner__title">
+            Бухгалтерский
+            учет в Грузии
+          </h1>
+          <p class="banner__text">
+            Удаленная бухгалтерия поможет вам сосредоточиться на развитии бизнеса, а не думать о подаче деклараций и
+            выставлении счетов
+          </p>
+          <div class="banner__inner">
+            <img src="images/banner__simple-img3.png" alt="">
+          </div>
+          <button class="btn btn-hover banner__btn">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Simple Banner
+  </div>
+
+  <section class="banner banner__simple" style="background-image: url(images/banner__simple-bg4.png);">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__wrapper-content">
+          <h1 class="banner__title">
+            Проведем аудит
+            налоговых деклараций
+          </h1>
+          <p class="banner__text">
+            Подача налоговых деклараций и уплата соответствующих
+            налогов — неотъемлемая часть ведения бизнеса в Грузии.
+          </p>
+          <div class="banner__inner">
+            <img src="images/banner__simple-img4.png" alt="">
+          </div>
+          <button class="btn btn-hover banner__btn">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Simple Banner
+  </div>
+
+  <section class="banner banner__simple" style="background-image: url(images/banner__simple-bg5.png);">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__wrapper-content">
+          <h1 class="banner__title">
+            Налоговое
+            декларирование
+          </h1>
+          <p class="banner__text">
+            Мы берем на себя все обязательства
+            по подготовке и подаче налоговых деклараций
+          </p>
+          <div class="banner__inner">
+            <img src="images/banner__simple-img5.png" alt="">
+          </div>
+          <button class="btn btn-hover banner__btn">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Simple Banner
+  </div>
+
+  <section class="banner banner__simple" style="background-image: url(images/banner__simple-bg6.png);">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__wrapper-content">
+          <h1 class="banner__title">
+            Восстановление
+            бухгалтерии
+          </h1>
+          <p class="banner__text">
+            Мы берем на себя все обязательства
+            по подготовке и подаче налоговых деклараций
+          </p>
+          <div class="banner__inner">
+            <img src="images/banner__simple-img6.png" alt="">
+          </div>
+          <button class="btn btn-hover banner__btn">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Simple Banner
+  </div>
+
+  <section class="banner banner__simple" style="background-image: url(images/banner__simple-bg7.png);">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__wrapper-content">
+          <h1 class="banner__title">
+            Payroll
+            Аутсорсинг
+          </h1>
+          <p class="banner__text">
+            Доверьте расчёт зарплаты нам, чтобы
+            сосредоточиться на развитии бизнеса
+          </p>
+          <div class="banner__inner">
+            <img src="images/banner__simple-img7.png" alt="">
+          </div>
+          <button class="btn btn-hover banner__btn">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Simple Banner
+  </div>
+
+  <section class="banner banner__simple" style="background-image: url(images/banner__simple-bg8.png);">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__wrapper-content">
+          <h1 class="banner__title">
+            Администрирование
+            ваших платежей
+          </h1>
+          <p class="banner__text">
+            Снимем с вас все задачи, связанные
+            с выставлением и оплатой счетов
+          </p>
+          <div class="banner__inner">
+            <img src="images/banner__simple-img8.png" alt="">
+          </div>
+          <button class="btn btn-hover banner__btn">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Simple Banner
+  </div>
+
+  <section class="banner banner__simple" style="background-image: url(images/banner__simple-bg9.png);">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__wrapper-content">
+          <h1 class="banner__title">
+            Внесение изменений
+            в учредительные документы
+          </h1>
+          <p class="banner__text">
+            Мы предлагаем помощь опытных специалистов для
+            подготовки и подачи бумаг в государственные органы и банки.
+          </p>
+          <div class="banner__inner">
+            <img src="images/banner__simple-img9.png" alt="">
+          </div>
+          <button class="btn btn-hover banner__btn">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Simple Banner
+  </div>
+
+  <section class="banner banner__simple" style="background-image: url(images/banner__simple-bg10.png);">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__wrapper-content">
+          <h1 class="banner__title">
+            Ликвидация
+            фирмы в Грузии
+          </h1>
+          <p class="banner__text">
+            Компания Jara Accounting поможет
+            вам ликвидировать компанию в Грузии
+          </p>
+          <div class="banner__inner">
+            <img src="images/banner__simple-img10.png" alt="">
+          </div>
+          <button class="btn btn-hover banner__btn">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Simple Banner
+  </div>
+
+  <section class="banner banner__simple" style="background-image: url(images/banner__simple-bg11.png);">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__wrapper-content">
+          <h1 class="banner__title">
+            Коммерческое
+            право в Грузии
+          </h1>
+          <p class="banner__text">
+            Компания Jara Accounting поможет
+            вам ликвидировать компанию в Грузии
+          </p>
+          <div class="banner__inner">
+            <img src="images/banner__simple-img11.png" alt="">
+          </div>
+          <button class="btn btn-hover banner__btn">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Simple Banner
+  </div>
+
+  <section class="banner banner__simple" style="background-image: url(images/banner__simple-bg12.png);">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__wrapper-content">
+          <h1 class="banner__title">
+            Трудовое
+            право в Грузии
+          </h1>
+          <p class="banner__text">
+            Компания Jara Accounting поможет
+            вам ликвидировать компанию в Грузии
+          </p>
+          <div class="banner__inner">
+            <img src="images/banner__simple-img12.png" alt="">
+          </div>
+          <button class="btn btn-hover banner__btn">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Simple Banner
+  </div>
+
+  <section class="banner banner__simple" style="background-image: url(images/banner__simple-bg13.png);">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__wrapper-content">
+          <h1 class="banner__title">
+            Сопровождение
+            в тендерах Грузии
+          </h1>
+          <p class="banner__text">
+            Компания Jara Accounting поможет
+            вам ликвидировать компанию в Грузии
+          </p>
+          <div class="banner__inner">
+            <img src="images/banner__simple-img13.png" alt="">
+          </div>
+          <button class="btn btn-hover banner__btn">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Simple Banner
+  </div>
+
+  <section class="banner banner__simple" style="background-image: url(images/banner__simple-bg14.png);">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__wrapper-content">
+          <h1 class="banner__title">
+            Вид на жительство
+            в Грузии (ВНЖ)
+          </h1>
+          <p class="banner__text">
+            Открытие счета в грузинском банке для физических
+            лиц нерезидентов страны можно и удаленно в ускоренном режиме.
+          </p>
+          <div class="banner__inner">
+            <img src="images/banner__simple-img14.png" alt="">
+          </div>
+          <button class="btn btn-hover banner__btn">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Simple Banner
+  </div>
+
+  <section class="banner banner__simple" style="background-image: url(images/banner__simple-bg15.png);">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__wrapper-content">
+          <h1 class="banner__title">
+            Сопровождение сделок
+            с недвижимостью в Грузии
+          </h1>
+          <p class="banner__text">
+            Открытие счета в грузинском банке для физических
+            лиц нерезидентов страны можно и удаленно в ускоренном режиме.
+          </p>
+          <div class="banner__inner">
+            <img src="images/banner__simple-img15.png" alt="">
+          </div>
+          <button class="btn btn-hover banner__btn">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Simple Banner
+  </div>
+
+  <section class="banner banner__simple" style="background-image: url(images/banner__simple-bg16.png);">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__wrapper-content">
+          <h1 class="banner__title">
+            Постоянное место
+            жительства в Грузии
+          </h1>
+          <p class="banner__text">
+            Наша команда Jara Accounting
+            поможет вам получить ПЖМ в Грузии
+          </p>
+          <div class="banner__inner">
+            <img src="images/banner__simple-img16.png" alt="">
+          </div>
+          <button class="btn btn-hover banner__btn">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Banner Articles
+  </div>
+
+  <section class="banner banner__articles" style="background-image: url(images/banner__articles-bg.png);">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__wrapper-content">
+          <div class="banner__articles-info">
+            <div class="info__date">03 ноября 2021</div>
+            <div class="info__view">
+              <img src="images/view.svg" alt="">
+              1056
+            </div>
+          </div>
+          <h1 class="banner__title">
+            Плюсы и минусы
+            регистрации в качестве
+            плательщика НДС в Грузии
+          </h1>
+          <div class="banner__articles-autor">
+            <div class="autor__avatar">
+              <img src="images/autor__avatar.png" alt="">
+            </div>
+            <div class="autor__name">
+              Бека Шукакидзе
+            </div>
+          </div>
+          <div class="banner__inner">
+            <img src="images/banner__articles-img.png" alt="">
+          </div>
+          <button class="btn btn-hover banner__btn">
+            Читать статью
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Banner Help
+  </div>
+
+  <section class="banner__help">
+    <div class="container">
+      <div class="banner__help-wrapper">
+        <div class="banner__help-content">
+          <div class="banner__help-title">
+            Поможем правильно
+            заключить договор
+          </div>
+          <p class="banner__help-text">
+            Специалисты Jara Accounting окажут вам поддержку в сфере
+            коммерческого права — проверят наличие всех необходимых
+            документов, соблюдение норм грузинского законодательства,
+            составят документацию под запрос клиента и оперативно
+            помогут решить юридические вопросы на месте, что
+            незаменимо, когда вы находитесь в другой стране.
+          </p>
+          <button class="banner__help-btn text-hover">
+            Оставить заявку
+            <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 5L18 5" stroke="#54B7E3" stroke-width="1.5" />
+              <path d="M13.6552 1L18 5L13.6552 9" stroke="#54B7E3" stroke-width="1.5" />
+            </svg>
+          </button>
+        </div>
+        <div class="banner__help-img">
+          <img src="images/bunner__help-img.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+    Slider
+  </div>
+
+  <section class="feedback">
+    <div class="container">
+      <div class="feedback__wrapper">
+        <div class="feedback__title">Отзывы наших клиентов</div>
+        <ul class="feedback__filter">
+          <li class="feedback__filter-item active">Все</li>
+          <li class="feedback__filter-item">Регистрация бизнеса</li>
+          <li class="feedback__filter-item">Открытие ИП для фрилансеров</li>
+          <li class="feedback__filter-item">Льготный IT-бизнес</li>
+          <li class="feedback__filter-item">Налоговая оптимизация</li>
+          <li class="feedback__filter-item">Бухгалтерский учет</li>
+        </ul>
+        <!-- mobile slider -->
+        <div class="feedback__slider-wrapper swiper mobile">
+          <div class="feedback__slider swiper-wrapper">
+            <div class="feedback__slider-item box swiper-slide">
+              <div class="feedback__slider-item__info">
+                <div class="feedback__info-user">
+                  <div class="feedback__info-user__avatar">
+                    <img src="images/feeback__user-avatar1.png" alt="">
+                  </div>
+                  <div class="feedback__info-user__inner">
+                    <div class="feedback__info-user__name">Александр Мажинский</div>
+                    <div class="feedback__info-user__date">08 Сен 2021</div>
+                    <div class="feedback__info-user__rating">
+                      <img src="images/star.svg" alt="">
+                      <img src="images/star.svg" alt="">
+                      <img src="images/star.svg" alt="">
+                      <img src="images/star.svg" alt="">
+                      <img src="images/star.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="feedback__info-social">
+                  <img src="images/google-G.svg" alt="">
+                </div>
+              </div>
+              <div class="feedback__slider-item__title">
+                “Не думайте больше и идите в Jara Accounting”
+              </div>
+              <div class="feedback__slider-item__text">
+                Лучшая компания, с которой я работал
+                и с которой мне приятно работать!
+                Они помогли мне зарегистрироваться
+                в качестве частного предпринимателя,
+                и они помогли мне сделать это шаг
+                за шагом через Whatsapp / Telegram,
+                что очень удобно. Они также находятся
+                во многих городах Грузии, не только...
+              </div>
+              <button class="feedback__slider-item__btn">
+                Читать полностью
+              </button>
+            </div>
+            <div class="feedback__slider-item box swiper-slide">
+              <div class="feedback__slider-item">
+                <div class="feedback__slider-item__info">
+                  <div class="feedback__info-user">
+                    <div class="feedback__info-user__avatar">
+                      <img src="images/feeback__user-avatar2.png" alt="">
+                    </div>
+                    <div class="feedback__info-user__inner">
+                      <div class="feedback__info-user__name">Евгений Дрибин</div>
+                      <div class="feedback__info-user__date">16 Сен 2021</div>
+                      <div class="feedback__info-user__rating">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feedback__info-social">
+                    <img src="images/google-G.svg" alt="">
+                  </div>
+                </div>
+                <div class="feedback__slider-item__title">
+                  Ребята предоставляют отличный сервис
+                </div>
+                <div class="feedback__slider-item__text">
+                  - аккуратный, профессиональный и простой в общении!
+                  Можно получить грамотную консультацию и быть
+                  уверенным, что эта информация работает и позволит...
+                  - аккуратный, профессиональный и простой в общении!
+                  Можно получить грамотную консультацию и быть
+                  уверенным, что эта информация работает и позволит...
+                </div>
+                <button class="feedback__slider-item__btn">
+                  Читать полностью
+                </button>
+              </div>
+            </div>
+            <div class="feedback__slider-item box swiper-slide">
+              <div class="feedback__slider-item">
+                <div class="feedback__slider-item__info">
+                  <div class="feedback__info-user">
+                    <div class="feedback__info-user__avatar">
+                      <img src="images/feeback__user-avatar3.png" alt="">
+                    </div>
+                    <div class="feedback__info-user__inner">
+                      <div class="feedback__info-user__name">Эрни Флот</div>
+                      <div class="feedback__info-user__date">09 Сен 2021</div>
+                      <div class="feedback__info-user__rating">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feedback__info-social">
+                    <img src="images/google-G.svg" alt="">
+                  </div>
+                </div>
+                <div class="feedback__slider-item__title">
+                  Лучшая бухгалтерская компания!
+                </div>
+                <div class="feedback__slider-item__text">
+                  Если вы думаете открыть бизнес в Грузии, обязательно
+                  сделайте это с этой компанией. Весь процесс был очень
+                  простым, и они взяли на себя всю тяжелую бумажную...
+                  Если вы думаете открыть бизнес в Грузии, обязательно
+                  сделайте это с этой компанией. Весь процесс был очень
+                  простым, и они взяли на себя всю тяжелую бумажную...
+                </div>
+                <button class="feedback__slider-item__btn">
+                  Читать полностью
+                </button>
+              </div>
+            </div>
+            <div class="feedback__slider-item box swiper-slide">
+              <div class="feedback__slider-item">
+                <div class="feedback__slider-item__info">
+                  <div class="feedback__info-user">
+                    <div class="feedback__info-user__avatar">
+                      <img src="images/feeback__user-avatar2.png" alt="">
+                    </div>
+                    <div class="feedback__info-user__inner">
+                      <div class="feedback__info-user__name">Евгений Дрибин</div>
+                      <div class="feedback__info-user__date">16 Сен 2021</div>
+                      <div class="feedback__info-user__rating">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feedback__info-social">
+                    <img src="images/google-G.svg" alt="">
+                  </div>
+                </div>
+                <div class="feedback__slider-item__title">
+                  Ребята предоставляют отличный сервис
+                </div>
+                <div class="feedback__slider-item__text">
+                  - аккуратный, профессиональный и простой в общении!
+                  Можно получить грамотную консультацию и быть
+                  уверенным, что эта информация работает и позволит...
+                  - аккуратный, профессиональный и простой в общении!
+                  Можно получить грамотную консультацию и быть
+                  уверенным, что эта информация работает и позволит...
+                </div>
+                <button class="feedback__slider-item__btn">
+                  Читать полностью
+                </button>
+              </div>
+            </div>
+            <div class="feedback__slider-item box swiper-slide">
+              <div class="feedback__slider-item">
+                <div class="feedback__slider-item__info">
+                  <div class="feedback__info-user">
+                    <div class="feedback__info-user__avatar">
+                      <img src="images/feeback__user-avatar3.png" alt="">
+                    </div>
+                    <div class="feedback__info-user__inner">
+                      <div class="feedback__info-user__name">Эрни Флот</div>
+                      <div class="feedback__info-user__date">09 Сен 2021</div>
+                      <div class="feedback__info-user__rating">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feedback__info-social">
+                    <img src="images/google-G.svg" alt="">
+                  </div>
+                </div>
+                <div class="feedback__slider-item__title">
+                  Лучшая бухгалтерская компания!
+                </div>
+                <div class="feedback__slider-item__text">
+                  Если вы думаете открыть бизнес в Грузии, обязательно
+                  сделайте это с этой компанией. Весь процесс был очень
+                  простым, и они взяли на себя всю тяжелую бумажную...
+                  Если вы думаете открыть бизнес в Грузии, обязательно
+                  сделайте это с этой компанией. Весь процесс был очень
+                  простым, и они взяли на себя всю тяжелую бумажную...
+                </div>
+                <button class="feedback__slider-item__btn">
+                  Читать полностью
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- desktop slider -->
+        <div class="feedback__slider-wrapper swiper desktop">
+          <div class="swiper-wrapper">
+            <div class="feedback__slider grid_row swiper-slide">
+              <div class="feedback__slider-item box">
+                <div class="feedback__slider-item__info">
+                  <div class="feedback__info-user">
+                    <div class="feedback__info-user__avatar">
+                      <img src="images/feeback__user-avatar1.png" alt="">
+                    </div>
+                    <div class="feedback__info-user__inner">
+                      <div class="feedback__info-user__name">Александр Мажинский</div>
+                      <div class="feedback__info-user__date">08 Сен 2021</div>
+                      <div class="feedback__info-user__rating">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feedback__info-social">
+                    <img src="images/Google.svg" alt="">
+                  </div>
+                </div>
+                <div class="feedback__slider-item__title">
+                  “Не думайте больше и идите в Jara Accounting”
+                </div>
+                <div class="feedback__slider-item__text">
+                  Лучшая компания, с которой я работал и с которой мне приятно работать! Они
+                  помогли мне зарегистрироваться в качестве частного предпринимателя, и они
+                  помогли мне сделать это шаг за шагом через Whatsapp / Telegram, что очень
+                  удобно. Они также находятся во многих городах Грузии, не только в Тбилиси, но я
+                  был, например, в Батуми, и у них здесь есть юристы, которые помогли мне со всем
+                  необходимым. Очень рекомендую Мариам, она мне помогла в Батуми. Она очень
+                  дружелюбная, очень услужливая, очень знающая и даже подвезла меня домой,
+                  когда начался сильный дождь. Они делают все возможное и помогают вам даже
+                  после того, как вы уже зарегистрировались с любым вопросом, который может у
+                  вас возникнуть, они отвечают в считанные секунды с отличным качеством каждого
+                  ответа. Если вы хотите зарегистрироваться в качестве индивидуального...
+                </div>
+                <button class="feedback__slider-item__btn">
+                  Читать полностью
+                </button>
+              </div>
+              <div class="feedback__slider-item box">
+                <div class="feedback__slider-item">
+                  <div class="feedback__slider-item__info">
+                    <div class="feedback__info-user">
+                      <div class="feedback__info-user__avatar">
+                        <img src="images/feeback__user-avatar2.png" alt="">
+                      </div>
+                      <div class="feedback__info-user__inner">
+                        <div class="feedback__info-user__name">Евгений Дрибин</div>
+                        <div class="feedback__info-user__date">16 Сен 2021</div>
+                        <div class="feedback__info-user__rating">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="feedback__info-social">
+                      <img src="images/Facebook.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="feedback__slider-item__title">
+                    Ребята предоставляют отличный сервис
+                  </div>
+                  <div class="feedback__slider-item__text">
+                    - аккуратный, профессиональный и простой в общении!
+                    Можно получить грамотную консультацию и быть
+                    уверенным, что эта информация работает и позволит...
+                  </div>
+                  <button class="feedback__slider-item__btn">
+                    Читать полностью
+                  </button>
+                </div>
+              </div>
+              <div class="feedback__slider-item box">
+                <div class="feedback__slider-item">
+                  <div class="feedback__slider-item__info">
+                    <div class="feedback__info-user">
+                      <div class="feedback__info-user__avatar">
+                        <img src="images/feeback__user-avatar3.png" alt="">
+                      </div>
+                      <div class="feedback__info-user__inner">
+                        <div class="feedback__info-user__name">Эрни Флот</div>
+                        <div class="feedback__info-user__date">09 Сен 2021</div>
+                        <div class="feedback__info-user__rating">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="feedback__info-social">
+                      <img src="images/Facebook.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="feedback__slider-item__title">
+                    Лучшая бухгалтерская компания!
+                  </div>
+                  <div class="feedback__slider-item__text">
+                    Если вы думаете открыть бизнес в Грузии, обязательно
+                    сделайте это с этой компанией. Весь процесс был очень
+                    простым, и они взяли на себя всю тяжелую бумажную...
+                  </div>
+                  <button class="feedback__slider-item__btn">
+                    Читать полностью
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="feedback__slider grid_row swiper-slide">
+              <div class="feedback__slider-item box">
+                <div class="feedback__slider-item__info">
+                  <div class="feedback__info-user">
+                    <div class="feedback__info-user__avatar">
+                      <img src="images/feeback__user-avatar1.png" alt="">
+                    </div>
+                    <div class="feedback__info-user__inner">
+                      <div class="feedback__info-user__name">Александр Мажинский</div>
+                      <div class="feedback__info-user__date">08 Сен 2021</div>
+                      <div class="feedback__info-user__rating">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feedback__info-social">
+                    <img src="images/Google.svg" alt="">
+                  </div>
+                </div>
+                <div class="feedback__slider-item__title">
+                  “Не думайте больше и идите в Jara Accounting”
+                </div>
+                <div class="feedback__slider-item__text">
+                  Лучшая компания, с которой я работал и с которой мне приятно работать! Они
+                  помогли мне зарегистрироваться в качестве частного предпринимателя, и они
+                  помогли мне сделать это шаг за шагом через Whatsapp / Telegram, что очень
+                  удобно. Они также находятся во многих городах Грузии, не только в Тбилиси, но я
+                  был, например, в Батуми, и у них здесь есть юристы, которые помогли мне со всем
+                  необходимым. Очень рекомендую Мариам, она мне помогла в Батуми. Она очень
+                  дружелюбная, очень услужливая, очень знающая и даже подвезла меня домой,
+                  когда начался сильный дождь. Они делают все возможное и помогают вам даже
+                  после того, как вы уже зарегистрировались с любым вопросом, который может у
+                  вас возникнуть, они отвечают в считанные секунды с отличным качеством каждого
+                  ответа. Если вы хотите зарегистрироваться в качестве индивидуального...
+                </div>
+                <button class="feedback__slider-item__btn">
+                  Читать полностью
+                </button>
+              </div>
+              <div class="feedback__slider-item box">
+                <div class="feedback__slider-item">
+                  <div class="feedback__slider-item__info">
+                    <div class="feedback__info-user">
+                      <div class="feedback__info-user__avatar">
+                        <img src="images/feeback__user-avatar2.png" alt="">
+                      </div>
+                      <div class="feedback__info-user__inner">
+                        <div class="feedback__info-user__name">Евгений Дрибин</div>
+                        <div class="feedback__info-user__date">16 Сен 2021</div>
+                        <div class="feedback__info-user__rating">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="feedback__info-social">
+                      <img src="images/Facebook.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="feedback__slider-item__title">
+                    Ребята предоставляют отличный сервис
+                  </div>
+                  <div class="feedback__slider-item__text">
+                    - аккуратный, профессиональный и простой в общении!
+                    Можно получить грамотную консультацию и быть
+                    уверенным, что эта информация работает и позволит...
+                  </div>
+                  <button class="feedback__slider-item__btn">
+                    Читать полностью
+                  </button>
+                </div>
+              </div>
+              <div class="feedback__slider-item box">
+                <div class="feedback__slider-item">
+                  <div class="feedback__slider-item__info">
+                    <div class="feedback__info-user">
+                      <div class="feedback__info-user__avatar">
+                        <img src="images/feeback__user-avatar3.png" alt="">
+                      </div>
+                      <div class="feedback__info-user__inner">
+                        <div class="feedback__info-user__name">Эрни Флот</div>
+                        <div class="feedback__info-user__date">09 Сен 2021</div>
+                        <div class="feedback__info-user__rating">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="feedback__info-social">
+                      <img src="images/Facebook.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="feedback__slider-item__title">
+                    Лучшая бухгалтерская компания!
+                  </div>
+                  <div class="feedback__slider-item__text">
+                    Если вы думаете открыть бизнес в Грузии, обязательно
+                    сделайте это с этой компанией. Весь процесс был очень
+                    простым, и они взяли на себя всю тяжелую бумажную...
+                  </div>
+                  <button class="feedback__slider-item__btn">
+                    Читать полностью
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="feedback__slider grid_row swiper-slide">
+              <div class="feedback__slider-item box">
+                <div class="feedback__slider-item__info">
+                  <div class="feedback__info-user">
+                    <div class="feedback__info-user__avatar">
+                      <img src="images/feeback__user-avatar1.png" alt="">
+                    </div>
+                    <div class="feedback__info-user__inner">
+                      <div class="feedback__info-user__name">Александр Мажинский</div>
+                      <div class="feedback__info-user__date">08 Сен 2021</div>
+                      <div class="feedback__info-user__rating">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                        <img src="images/star.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feedback__info-social">
+                    <img src="images/Google.svg" alt="">
+                  </div>
+                </div>
+                <div class="feedback__slider-item__title">
+                  “Не думайте больше и идите в Jara Accounting”
+                </div>
+                <div class="feedback__slider-item__text">
+                  Лучшая компания, с которой я работал и с которой мне приятно работать! Они
+                  помогли мне зарегистрироваться в качестве частного предпринимателя, и они
+                  помогли мне сделать это шаг за шагом через Whatsapp / Telegram, что очень
+                  удобно. Они также находятся во многих городах Грузии, не только в Тбилиси, но я
+                  был, например, в Батуми, и у них здесь есть юристы, которые помогли мне со всем
+                  необходимым. Очень рекомендую Мариам, она мне помогла в Батуми. Она очень
+                  дружелюбная, очень услужливая, очень знающая и даже подвезла меня домой,
+                  когда начался сильный дождь. Они делают все возможное и помогают вам даже
+                  после того, как вы уже зарегистрировались с любым вопросом, который может у
+                  вас возникнуть, они отвечают в считанные секунды с отличным качеством каждого
+                  ответа. Если вы хотите зарегистрироваться в качестве индивидуального...
+                </div>
+                <button class="feedback__slider-item__btn">
+                  Читать полностью
+                </button>
+              </div>
+              <div class="feedback__slider-item box">
+                <div class="feedback__slider-item">
+                  <div class="feedback__slider-item__info">
+                    <div class="feedback__info-user">
+                      <div class="feedback__info-user__avatar">
+                        <img src="images/feeback__user-avatar2.png" alt="">
+                      </div>
+                      <div class="feedback__info-user__inner">
+                        <div class="feedback__info-user__name">Евгений Дрибин</div>
+                        <div class="feedback__info-user__date">16 Сен 2021</div>
+                        <div class="feedback__info-user__rating">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="feedback__info-social">
+                      <img src="images/Facebook.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="feedback__slider-item__title">
+                    Ребята предоставляют отличный сервис
+                  </div>
+                  <div class="feedback__slider-item__text">
+                    - аккуратный, профессиональный и простой в общении!
+                    Можно получить грамотную консультацию и быть
+                    уверенным, что эта информация работает и позволит...
+                  </div>
+                  <button class="feedback__slider-item__btn">
+                    Читать полностью
+                  </button>
+                </div>
+              </div>
+              <div class="feedback__slider-item box">
+                <div class="feedback__slider-item">
+                  <div class="feedback__slider-item__info">
+                    <div class="feedback__info-user">
+                      <div class="feedback__info-user__avatar">
+                        <img src="images/feeback__user-avatar3.png" alt="">
+                      </div>
+                      <div class="feedback__info-user__inner">
+                        <div class="feedback__info-user__name">Эрни Флот</div>
+                        <div class="feedback__info-user__date">09 Сен 2021</div>
+                        <div class="feedback__info-user__rating">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                          <img src="images/star.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="feedback__info-social">
+                      <img src="images/Facebook.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="feedback__slider-item__title">
+                    Лучшая бухгалтерская компания!
+                  </div>
+                  <div class="feedback__slider-item__text">
+                    Если вы думаете открыть бизнес в Грузии, обязательно
+                    сделайте это с этой компанией. Весь процесс был очень
+                    простым, и они взяли на себя всю тяжелую бумажную...
+                  </div>
+                  <button class="feedback__slider-item__btn">
+                    Читать полностью
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination desktop"></div>
+        </div>
+        <button class="feedback__slider-btn">
+          Читать все отзывы
+          <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 5L18 5" stroke="#7F9097" stroke-width="1.5" />
+            <path d="M13.6552 1L18 5L13.6552 9" stroke="#7F9097" stroke-width="1.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 100px; text-align: center; padding-top: 50px; font-size: 30px; font-weight: 600;">
+
+  </div>
+
 </body>
 
 </html>

@@ -1,5 +1,49 @@
+body {
+  font-family: "Inter", sans-serif;
+  color: #0B2128;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 80px;
+  }
+}
+
 .text-hover:hover {
   color: #0E8EC7;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 145%;
+  background-color: #54B7E3;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 10px;
+  width: 100%;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  color: #FCFDFF;
 }
 
 .btn-hover:hover {

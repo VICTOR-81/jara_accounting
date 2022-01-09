@@ -1,10 +1,6 @@
 @import 'vars';
 
-body{
-  display: flex;
-  justify-content: space-around;
-  font-family: 'Inter', sans-serif;
-}
+
 .wrapper{
   display: flex;
   column-gap: 14px;
@@ -175,12 +171,4 @@ body{
 .text{
   @include h1-125;
   margin-bottom: 100px;
-}
-.btn{
-  outline: none;
-  border: none;
-  @include h1-125;
-  background-color: $button-normal;
-  transition: all .3s;
-  border-radius: 10px;
 }
