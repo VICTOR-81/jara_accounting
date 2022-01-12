@@ -475,7 +475,7 @@
     }
   }
 }
-
+////////////////////////////////////////////////////////////////////////////////////////
 .feedback{
   &__slider-wrapper.mobile{
     @media (min-width: 1024px) {
@@ -652,7 +652,6 @@
     }
   }
 }
-
 .feedback__wrapper{
   position: relative;
 }
@@ -690,6 +689,132 @@
     &-active{
       color: $background;
       background-color: $button-normal;
+    }
+  }
+}
+////////////////////////////////////////////////////////////////////////////////////////
+.avantage{
+  &__wrapper{
+    gap: 0;
+    @media (min-width: 600px) {
+      border-top: 1px solid #DBDBDB;
+    }
+    &-item{
+      padding-top: 32px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #DBDBDB;
+      @media (min-width: 1024px) {
+        padding-top: 80px;
+      }
+      @media (min-width: 1366px) {
+        padding-bottom: 127px;
+      }
+      &:nth-child(even){
+        @media (min-width: 600px) {
+          border-left: 1px solid #DBDBDB;
+          padding-left: 20px;
+        }
+        @media (min-width: 1024px) {
+          padding-left: 64px;
+        }
+        @media (min-width: 1366px) {
+          padding-left: 128px;
+        }
+      }
+      &:nth-child(odd){
+        @media (min-width: 600px) {
+          padding-right: 20px;
+        }
+        @media (min-width: 1024px) {
+          padding-right: 64px;
+        }
+        @media (min-width: 1366px) {
+          padding-right: 128px;
+        }
+      }
+    }
+  }
+  &__item{
+    &-title{
+      margin-bottom: 16px;
+      @include h1-mobile;
+      @media (min-width: 768px) {
+          @include h2;
+        }
+      @media (min-width: 1366px) {
+          @include h1-130;
+        }
+    }
+    &-text{
+      @include h14;
+      @media (min-width: 768px) {
+          @include h15;
+        }
+    }
+  }
+}
+////////////////////////////////////////////////////////////////////////////////
+.partners{
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/////////////////////////////////////////////////////////////////////////////////
+.footer{
+  margin-top: 72px;
+  &__top{
+    &-communication{
+      border-top: 1px solid $line;
+    }
+  }
+  &__callus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a{
+      @include h13;
+      margin-bottom: 6px;
+    }
+    span{
+      @include h15;
+      color: #979B9D;
+      margin-bottom: 29px;
+    }
+  }
+  &__communication{
+    display: flex;
+    flex-direction: column;
+    a:nth-child(1),
+    a:nth-child(2),
+    a:nth-child(6){
+      display: none;
+    }
+    a{
+      display: flex;
+      align-items: center;
+      padding-top: 25px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid $line;
+      @include h15;
+      color: #979B9D;
+      svg:nth-child(2){
+        margin-left: auto;
+      }
+      svg:nth-child(1){
+        margin-right: 10px;
+      }
+      transition: all .3s;
+      &:hover{
+        color: $button-hover;
+      }
+      &:hover svg:nth-child(1) path{
+        fill: $button-hover;
+      }
+      &:hover svg:nth-child(2) path{
+        stroke: $button-hover;
+      }
     }
   }
 }
