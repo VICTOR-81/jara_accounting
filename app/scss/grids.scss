@@ -849,7 +849,9 @@
     }
   }
   &__bottom-category{
-    background-color: $light-blue;
+    @media (min-width: 1024px) {
+      background-color: $light-blue;
+    }
   }
   &__bottom-category__wrapper{
     @media (min-width: 1024px) {

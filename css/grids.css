@@ -1171,8 +1171,10 @@
     fill: none;
   }
 }
-.footer__bottom-category {
-  background-color: #F3F6F9;
+@media (min-width: 1024px) {
+  .footer__bottom-category {
+    background-color: #F3F6F9;
+  }
 }
 @media (min-width: 1024px) {
   .footer__bottom-category__wrapper {
