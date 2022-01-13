@@ -773,6 +773,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (min-width: 1024px) {
+      display: none;
+    }
     a{
       @include h13;
       margin-bottom: 6px;
@@ -786,10 +789,17 @@
   &__communication{
     display: flex;
     flex-direction: column;
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
     a:nth-child(1),
     a:nth-child(2),
     a:nth-child(6){
       display: none;
+      @media (min-width: 1024px) {
+        display: flex;
+      }
     }
     a{
       display: flex;
@@ -801,6 +811,9 @@
       color: #979B9D;
       svg:nth-child(2){
         margin-left: auto;
+        @media (min-width: 1024px) {
+          display: none;
+        }
       }
       svg:nth-child(1){
         margin-right: 10px;
@@ -815,6 +828,259 @@
       &:hover svg:nth-child(2) path{
         stroke: $button-hover;
       }
+      @media (min-width: 1024px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border: none;
+        @include h17;
+        color: $primary;
+        &:not(:last-child){
+          path{
+            fill: $primary;
+          }
+        }
+        &:last-child:hover{
+          svg path{
+            stroke: $button-hover;
+            fill: none;
+          }
+        }
+      }
+    }
+  }
+  &__bottom-category{
+    background-color: $light-blue;
+  }
+  &__bottom-category__wrapper{
+    @media (min-width: 1024px) {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 50px;
+    }
+    @media (min-width: 1366px) {
+      column-gap: 82px;
+    }
+  }
+  &__category-item{
+    cursor: pointer;
+    &:not(:last-child){
+      .footer__category-item__title{
+        border-bottom: 1px solid $line;
+        @media (min-width: 1024px) {
+          border: none;
+        }
+      }
+    }
+    &.rotate svg{
+      transform: rotateX(180deg);
+      transition: all .5s;
+    }
+    & svg{
+      transition: all .5s;
+    }
+    svg{
+      margin-left: auto;
+    }
+    &__title{
+      padding-top: 25px;
+      padding-bottom: 24px;
+      @include h15;
+      display: flex;
+      align-items: center;
+      @media (min-width: 1024px) {
+        @include h14;
+        padding-top: 50px;
+        padding-bottom: 6px;
+        svg{
+          display: none;
+        }
+      }
+    }
+    &__list{
+      max-height: 0px;
+      overflow-y: hidden;
+      transition: max-height 1s linear;
+      @media (min-width: 1024px) {
+        max-height: 100%;
+        margin-bottom: 79px;
+      }
+      &.dropdown{
+        max-height: 500px;
+        transition: max-height 1.5s linear;
+      }
+      li:last-child{
+        a{
+          border-bottom: 1px solid $line;
+          @media (min-width: 1024px) {
+            border: none;
+          }
+        }
+      }
+      a{
+        padding-top: 16px;
+        padding-bottom: 16px;
+        display: block;
+        @include h17;
+        color: $secondary;
+        &:hover{
+          color: $button-hover;
+        }
+      }
+    }
+  }
+  &__bottom-info{
+    background-color: $light-blue;
+    padding-top: 50px;
+    @media (min-width: 768px) {
+      padding-top: 0px;
+    }
+    &__title{
+      @include h17;
+      @media (min-width: 768px) {
+        padding-top: 30px;
+        border-top: 1px solid $line;
+      }
+    }
+    &__text{
+      @include h17;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      max-width: 594px;
+      color: $secondary;
+    }
+    &__time{
+      padding-bottom: 30px;
+      border-bottom: 1px solid $line;
+      span{
+        display: block;
+        @include h17;
+        color: $button-hover;
+        &:first-child{
+          display: flex;
+          margin-bottom: 6px;
+          img{
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+  &__bottom-copyright{
+    background-color: $light-blue;
+    padding: 30px 0;
+    @media (min-width: 768px) {
+      padding-top: 44px;
+    }
+    span{
+      @include h17;
+      color: $secondary;
+      &:last-child{
+        display: none;
+        @media (min-width: 768px) {
+          display: inline;
+          margin-left: 59px;
+        }
+      }
+    }
+  }
+}
+////////////////////////////////////////////////////////////////////////////////
+.accounting{
+  &__title{
+    @include h1-mobile;
+    max-width: 521px;
+    @media (min-width: 1024px) {
+      @include h1-135;
+    }
+  }
+  &__wrapper{
+    margin-top: 32px;
+    @media (min-width: 768px) {
+      padding-top: 56px;
+      padding-bottom: 56px;
+      border-top: 1px solid $line;
+      border-bottom: 1px solid $line;
+    }
+    @media (min-width: 1024px) {
+      margin-top: 38px;
+    }
+    &-item{
+        &:nth-child(1){
+          .accounting__item-title:before{
+          content: '1';
+        }
+      }
+        &:nth-child(2){
+          .accounting__item-title:before{
+          content: '2';
+        }
+      }
+        &:nth-child(3){
+          .accounting__item-title:before{
+          content: '3';
+        }
+      }
+      @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        &:not(:first-child){
+          margin-top: 40px;
+        }
+      }
+      @media (min-width: 1024px) {
+        &:not(:first-child){
+          margin-top: 70px;
+        }
+      }
+    }
+  }
+  &__item-title{
+    margin-top: 32px;
+    padding-left: 48px;
+    @include h4-mobile;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 16px;
+    &::before{
+      position: absolute;
+      content: '';
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: $light-blue;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 50%;
+      transform: translateY(-50%);
+      @include h4-mobile;
+      color: $button-hover;
+    }
+    @media (min-width: 768px) {
+      margin: 0;
+      flex: 1;
+      margin-right: 10px;
+    }
+    @media (min-width: 1024px) {
+      @include h5;
+      padding-left: 118px;
+      &::before{
+        width: 90px;
+        height: 90px;
+        @include h4;
+      }
+    }
+  }
+  &__item-text{
+    @include h15;
+    color: $secondary;
+    @media (min-width: 768px) {
+      flex: 1;
+      margin-left: 10px;
+    }
+    @media (min-width: 1024px) {
+      @include h14;
     }
   }
 }
