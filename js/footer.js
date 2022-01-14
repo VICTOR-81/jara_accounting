@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-  const footerCategoryItem = document.querySelectorAll('.footer__category-item');
+  const footer = document.querySelector('.footer');
 
   function dropDown (list) {
     const footerCategoryList = list.querySelector('.footer__category-item__list');
@@ -8,18 +8,17 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   function rotate(item) {
-    item.classList.toggle('rotate');
+    const footerCategoryTitle = item.querySelector('.footer__category-item__title');
+    footerCategoryTitle.classList.toggle('rotate');
   }
 
-  footerCategoryItem.forEach((item) => {
-    item.addEventListener('click', function(e) {
-      console.log('hi');
-      if (e.target === this.querySelector('.footer__category-item__title') || e.target === this.querySelector('.footer__category-item__title > svg'))
+  
+    footer.addEventListener('click', function(e) {
+      if (e.target.closest('div').classList.contains('footer__category-item__title'))
       {
         dropDown(this);
         rotate(this);
-      }
+      } 
     });
-  });
 
 });
