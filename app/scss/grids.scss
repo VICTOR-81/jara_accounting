@@ -1122,11 +1122,17 @@
       cursor: pointer;
       display: flex;
       align-items: center;
+      justify-content: center;
       padding: 18px 24px 20px;
       border-radius: 10px;
       border: 1px solid $stroke;
       @include h16;
       color: $secondary;
+      @media (max-width: 375px) {
+        flex: 1;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
       @media (min-width: 660px) {
         padding: 18px 0px;
         flex: 1;
@@ -1184,17 +1190,17 @@
       &::placeholder{
         color: #979B9D;
       }
-      &:not(:nth-child(-n+2)){
-        display: none;
-      }
+      // &:not(:nth-child(-n+2)){
+      //   display: none;
+      // }
       &:focus{
         border: 1px solid $button-hover;
       }
       @media (min-width: 660px) {
         margin-bottom: 24px;
-        &:not(:nth-child(-n+2)){
-          display: block;
-        }
+        // &:not(:nth-child(-n+2)){
+        //   display: block;
+        // }
       }
     }
     &-radiobtn{

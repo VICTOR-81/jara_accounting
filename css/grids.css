@@ -1565,6 +1565,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 18px 24px 20px;
   border-radius: 10px;
   border: 1px solid #CCD1D4;
@@ -1572,6 +1575,15 @@
   font-size: 14px;
   line-height: 145%;
   color: #485B63;
+}
+@media (max-width: 375px) {
+  .formfeedback__tabs-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 @media (min-width: 660px) {
   .formfeedback__tabs-item {
@@ -1652,18 +1664,12 @@
 .formfeedback__form input::placeholder {
   color: #979B9D;
 }
-.formfeedback__form input:not(:nth-child(-n+2)) {
-  display: none;
-}
 .formfeedback__form input:focus {
   border: 1px solid #0E8EC7;
 }
 @media (min-width: 660px) {
   .formfeedback__form input {
     margin-bottom: 24px;
-  }
-  .formfeedback__form input:not(:nth-child(-n+2)) {
-    display: block;
   }
 }
 .formfeedback__form-radiobtn {
