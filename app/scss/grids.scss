@@ -1277,4 +1277,42 @@
       }
     }
   }
+  .valid{
+    input{
+      background-image: url(../images/check-valid.png);
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      padding-right: 45px;
+      @media (min-width: 425px) {
+        background-position: right 26px center;
+        padding-right: 60px;
+      }
+    }
+  }
+  .invalid{
+    position: relative;
+    &:after{
+      position: absolute;
+      content: 'Обязательно для заполнения';
+      white-space: nowrap;
+      top: 50px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+      color: $error;
+    }
+    input
+    {
+      background-image: url(../images/check-invalid.png);
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      padding-right: 45px;
+      margin-bottom: 52px;
+      border: 1px solid $error;
+      @media (min-width: 425px) {
+        background-position: right 26px center;
+        padding-right: 60px;
+      }
+    }
+  }
 }
