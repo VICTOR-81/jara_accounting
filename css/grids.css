@@ -2114,3 +2114,94 @@
     position: static;
   }
 }
+
+.categoryofarticles__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+}
+.categoryofarticles__tabs {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 18px;
+     -moz-column-gap: 18px;
+          column-gap: 18px;
+  overflow-x: scroll;
+}
+.categoryofarticles__tabs::-webkit-scrollbar {
+  height: 0;
+}
+.categoryofarticles__tabs-item {
+  white-space: nowrap;
+  padding: 14px 20px;
+  background-color: #F8F8F8;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+}
+.categoryofarticles__tabs-item.active {
+  background-color: #54B7E3;
+  color: #FCFDFF;
+}
+.categoryofarticles__articles-item__img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.categoryofarticles__articles-item__img img {
+  width: 100%;
+}
+.categoryofarticles__articles-item__title {
+  margin-top: 20px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+  font-weight: 700;
+  line-height: 125%;
+}
+.categoryofarticles__articles-item__info {
+  position: relative;
+}
+@media (min-width: 370px) {
+  .categoryofarticles__articles-item__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px;
+  }
+}
+.categoryofarticles__articles-item__info .banner__articles-autor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+@media (min-width: 370px) {
+  .categoryofarticles__articles-item__info .banner__articles-autor {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.categoryofarticles__articles-item__info .banner__articles-info {
+  margin-bottom: 0;
+  gap: 8px;
+  position: absolute;
+  left: 48px;
+  top: 22px;
+}
+@media (min-width: 370px) {
+  .categoryofarticles__articles-item__info .banner__articles-info {
+    position: static;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}

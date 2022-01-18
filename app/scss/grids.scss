@@ -1508,3 +1508,74 @@
     }
   }
 }
+/////////////////////////////////////////////////////////////////////////////////////////////
+.categoryofarticles{
+  &__title{
+    @include h1-mobile;
+  }
+  &__tabs{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    column-gap: 18px;
+    overflow-x: scroll;
+    &::-webkit-scrollbar{
+      height: 0;
+    }
+    &-item{
+      white-space: nowrap;
+      padding: 14px 20px;
+      background-color: $tab;
+      border-radius: 5px;
+      @include h15;
+      &.active{
+        background-color: $button-normal;
+        color: $background;
+      }
+    }
+  }
+  &__articles{
+    &-item{
+      &__img{
+        border-radius: 10px;
+        overflow: hidden;
+        img{
+          width: 100%;
+        }
+      }
+      &__title{
+        margin-top: 20px;
+        margin-bottom: 16px;
+        @include h2-mobile;
+        font-weight: 700;
+        line-height: 125%;
+      }
+      &__info{
+        position: relative;
+        @media (min-width: 370px) {
+          display: flex;
+          gap: 8px;
+        }
+        .banner__articles-autor{
+          display: flex;
+          gap: 8px;
+          align-items: start;
+          @media (min-width: 370px) {
+            align-items: center;
+          }
+        }
+        .banner__articles-info{
+          margin-bottom: 0;
+          gap: 8px;
+          position: absolute;
+          left: 48px;
+          top: 22px;
+          @media (min-width: 370px) {
+            position: static;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
