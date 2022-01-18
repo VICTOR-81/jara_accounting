@@ -1316,3 +1316,195 @@
     }
   }
 }
+/////////////////////////////////////////////////////////////////////////////////////////////////
+.newarticles{
+  &__title{
+    @include h1-mobile;
+    margin-bottom: 32px;
+    @media (min-width: 768px) {
+      @include h1-135;
+      margin-bottom: 38px;
+    }
+  }
+  &__wrapper{
+    @media (min-width: 1024px) {
+      display: flex;
+      padding-bottom: 12px;
+      border-bottom: 1px solid $line;
+      justify-content: space-between;
+      padding-bottom: 40px;
+    }
+    // @media (min-width: 1144px) {
+    //   padding-bottom: 24px;
+    // }
+    // @media (min-width: 1200px) {
+    //   padding-bottom: 40px;
+    // }
+  }
+  &__firstarticle{
+    max-width: 770px;
+    @media (min-width: 1200px) {
+      padding-right: 40px;
+      border-right: 1px solid $line;
+    }
+    &-img{
+      border-radius: 10px;
+      overflow: hidden;
+      display: inline-block;
+    }
+    &-title{
+      @include h2-mobile;
+      font-weight: 700;
+      line-height: 125%;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      @media (min-width: 1024px) {
+        @include h3;
+        margin-bottom: 36px;
+      }
+    }
+    &-info{
+      position: relative;
+      margin-bottom: 24px;
+      @media (min-width: 375px) {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+      }
+      @media (min-width: 1024px) {
+        column-gap: 16px;
+        margin-bottom: 0;
+      }
+      .banner__articles-autor{
+        column-gap: 8px;
+        align-items: start;
+        @media (min-width: 375px) {
+          align-items: center;
+        }
+        @media (min-width: 1024px) {
+          column-gap: 14px;
+        }
+      }
+      .banner__articles-info{
+        column-gap: 8px;
+        margin-bottom: 0;
+        position: absolute;
+        top: 24px;
+        left: 48px;
+        @media (min-width: 375px) {
+          position: static;
+        }
+      }
+    }
+  }
+  &__secondarticle{
+    &-wrapper{
+      border-top: 1px solid $line;
+      border-bottom: 1px solid $line;
+      @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: 16px;
+      }
+      @media (min-width: 1024px) {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding: 0;
+        padding-left: 40px;
+        border: none;
+        gap: 0;
+      }
+    }
+    &-item{
+      padding-top: 33px;
+      padding-bottom: 32px;
+      @media (min-width: 768px) {
+        width: 48%;
+      }
+      @media (min-width: 1024px) {
+        width: 100%;
+        padding-top: 28px;
+        padding-bottom: 28px;
+        &:first-child{
+          padding-top: 0;
+        }
+        &:last-child{
+          padding-bottom: 0;
+        }
+      }
+      &:last-child{
+        display: none;
+        @media (min-width: 768px) {
+          display: block;
+        }
+      }
+      &:not(:first-child){
+        border-top: 1px solid $line;
+      }
+      &:nth-child(2){
+        @media (min-width: 768px) {
+          border-top: none;
+        }
+        @media (min-width: 1024px) {
+          border-top: 1px solid $line;
+        }
+      }
+      &-title{
+        @include h4-mobile;
+        font-weight: 500;
+        margin-bottom: 16px;
+        @media (min-width: 1024px) {
+          @include h8;
+        }
+      }
+      &-info{
+        position: relative;
+        @media (min-width: 375px) {
+          display: flex;
+          column-gap: 8px;
+        }
+        @media (min-width: 1024px) {
+          column-gap: 16px;
+        }
+        .banner__articles-autor{
+          column-gap: 8px;
+          .autor__avatar{
+            display: none;
+            @media (min-width: 425px) {
+              display: block;
+              width: 34px;
+              height: 34px;
+            }
+          }
+          @media (min-width: 1024px) {
+            position: static;
+          }
+          @media (min-width: 1024px) {
+            column-gap: 14px;
+            align-items: start;
+          }
+          @media (min-width: 1200px) {
+            align-items: center;
+          }
+        }
+        .banner__articles-info{
+          column-gap: 8px;
+          margin-bottom: 0;
+          align-items: center;
+          @media (min-width: 1024px) {
+            margin-left: 0;
+          }
+          @media (min-width: 1024px) {
+            position: absolute;
+            left: 48px;
+            top: 18px;
+          }
+          @media (min-width: 1200px) {
+            position: static;
+          }
+        }
+      }
+    }
+  }
+}
