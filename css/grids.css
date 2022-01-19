@@ -2120,6 +2120,13 @@
   font-size: 24px;
   line-height: 125%;
 }
+@media (min-width: 768px) {
+  .categoryofarticles__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 135%;
+  }
+}
 .categoryofarticles__tabs {
   margin-top: 32px;
   margin-bottom: 32px;

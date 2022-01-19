@@ -1500,6 +1500,9 @@
 .categoryofarticles{
   &__title{
     @include h1-mobile;
+    @media (min-width: 768px) {
+      @include h1-135;
+    }
   }
   &__tabs{
     margin-top: 32px;
