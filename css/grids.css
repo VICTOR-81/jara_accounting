@@ -2147,6 +2147,12 @@
   background-color: #54B7E3;
   color: #FCFDFF;
 }
+.categoryofarticles__articles {
+  row-gap: 32px;
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 32px;
+  margin-bottom: 24px;
+}
 .categoryofarticles__articles-item__img {
   border-radius: 10px;
   overflow: hidden;
@@ -2162,6 +2168,13 @@
   line-height: 130%;
   font-weight: 700;
   line-height: 125%;
+}
+@media (min-width: 768px) {
+  .categoryofarticles__articles-item__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+  }
 }
 .categoryofarticles__articles-item__info {
   position: relative;
@@ -2190,6 +2203,35 @@
             align-items: center;
   }
 }
+@media (min-width: 600px) {
+  .categoryofarticles__articles-item__info .banner__articles-autor {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+@media (min-width: 768px) {
+  .categoryofarticles__articles-item__info .banner__articles-autor {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .categoryofarticles__articles-item__info .banner__articles-autor {
+    position: static;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+@media (min-width: 1190px) {
+  .categoryofarticles__articles-item__info .banner__articles-autor {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .categoryofarticles__articles-item__info .banner__articles-info {
   margin-bottom: 0;
   gap: 8px;
@@ -2200,6 +2242,107 @@
 @media (min-width: 370px) {
   .categoryofarticles__articles-item__info .banner__articles-info {
     position: static;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (min-width: 600px) {
+  .categoryofarticles__articles-item__info .banner__articles-info {
+    position: absolute;
+  }
+}
+@media (min-width: 768px) {
+  .categoryofarticles__articles-item__info .banner__articles-info {
+    position: static;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .categoryofarticles__articles-item__info .banner__articles-info {
+    position: absolute;
+    margin-left: 0;
+    top: 22px;
+  }
+}
+@media (min-width: 1190px) {
+  .categoryofarticles__articles-item__info .banner__articles-info {
+    position: static;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.categoryofarticles__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.categoryofarticles__pagination button,
+.categoryofarticles__pagination a {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #F3F6F9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 768px) {
+  .categoryofarticles__pagination button {
+    display: none;
+  }
+}
+.categoryofarticles__pagination-points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+.categoryofarticles__pagination-points a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  background-color: transparent;
+}
+.categoryofarticles__pagination-points a:not(:nth-child(-n+5)) {
+  display: none;
+}
+@media (min-width: 768px) {
+  .categoryofarticles__pagination-points a:not(:nth-child(-n+5)) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.categoryofarticles__pagination-points a:hover {
+  background-color: #F3F6F9;
+}
+.categoryofarticles__pagination-points a.active {
+  background-color: #54B7E3;
+  color: #FCFDFF;
+}
+.categoryofarticles__pagination-points span {
+  display: none;
+}
+@media (min-width: 768px) {
+  .categoryofarticles__pagination-points span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

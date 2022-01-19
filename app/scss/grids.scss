@@ -1190,17 +1190,11 @@
       &::placeholder{
         color: #979B9D;
       }
-      // &:not(:nth-child(-n+2)){
-      //   display: none;
-      // }
       &:focus{
         border: 1px solid $button-hover;
       }
       @media (min-width: 660px) {
         margin-bottom: 24px;
-        // &:not(:nth-child(-n+2)){
-        //   display: block;
-        // }
       }
     }
     &-radiobtn{
@@ -1334,12 +1328,6 @@
       justify-content: space-between;
       padding-bottom: 40px;
     }
-    // @media (min-width: 1144px) {
-    //   padding-bottom: 24px;
-    // }
-    // @media (min-width: 1200px) {
-    //   padding-bottom: 40px;
-    // }
   }
   &__firstarticle{
     max-width: 770px;
@@ -1535,6 +1523,10 @@
     }
   }
   &__articles{
+    row-gap: 32px;
+    border-bottom: 1px solid $line;
+    padding-bottom: 32px;
+    margin-bottom: 24px;
     &-item{
       &__img{
         border-radius: 10px;
@@ -1549,6 +1541,9 @@
         @include h2-mobile;
         font-weight: 700;
         line-height: 125%;
+        @media (min-width: 768px) {
+          @include h7;
+        }
       }
       &__info{
         position: relative;
@@ -1563,6 +1558,19 @@
           @media (min-width: 370px) {
             align-items: center;
           }
+          @media (min-width: 600px) {
+            align-items: start;
+          }
+          @media (min-width: 768px) {
+            align-items: center;
+          }
+          @media (min-width: 1024px) {
+            position: static;
+            align-items: start;
+          }
+          @media (min-width: 1190px) {
+            align-items: center;
+          }
         }
         .banner__articles-info{
           margin-bottom: 0;
@@ -1574,6 +1582,69 @@
             position: static;
             align-items: center;
           }
+          @media (min-width: 600px) {
+            position: absolute;
+          }
+          @media (min-width: 768px) {
+            position: static;
+            align-items: center;
+          }
+          @media (min-width: 1024px) {
+            position: absolute;
+            margin-left: 0;
+            top: 22px;
+          }
+          @media (min-width: 1190px) {
+            position: static;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+  &__pagination{
+    display: flex;
+    justify-content: space-between;
+    button,
+    a{
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: $light-blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button{
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+    &-points{
+      display: flex;
+      column-gap: 8px;
+      a{
+        @include h15;
+        background-color: transparent;
+        &:not(:nth-child(-n+5)){
+          display: none;
+          @media (min-width: 768px) {
+            display: flex;
+          }
+        }
+        &:hover{
+          background-color: $light-blue;
+        }
+        &.active{
+          background-color: $button-normal;
+          color: $background;
+        }
+      }
+      span{
+        display: none;
+        @media (min-width: 768px) {
+          display: flex;
+          align-items: center;
         }
       }
     }
