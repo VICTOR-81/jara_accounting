@@ -234,7 +234,7 @@
   color: #485B63;
   max-width: 447px;
 }
-.banner__inner {
+.banner__inner, .banner__inner1 {
   margin-top: 32px;
   margin-bottom: 32px;
   position: relative;
@@ -242,7 +242,7 @@
   overflow: hidden;
 }
 @media (min-width: 1024px) {
-  .banner__inner {
+  .banner__inner, .banner__inner1 {
     border-radius: 25px;
     position: absolute;
     right: 0;
@@ -252,7 +252,7 @@
   }
 }
 @media (min-width: 1366px) {
-  .banner__inner {
+  .banner__inner, .banner__inner1 {
     max-width: 660px;
   }
 }
@@ -472,6 +472,38 @@
 }
 @media (min-width: 1366px) {
   .banner__simple .banner__inner {
+    bottom: 0;
+    width: 71%;
+  }
+}
+.banner__simple .banner__inner1 img {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .banner__simple .banner__inner1 {
+    width: 60%;
+    bottom: -34px;
+    top: -48px;
+    margin-right: -40px;
+    border-radius: 0;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+  .banner__simple .banner__inner1::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -o-linear-gradient(359.23deg, #F3F6F9 16%, rgba(243, 246, 249, 0) 60%);
+    background-image: linear-gradient(90.77deg, #F3F6F9 16%, rgba(243, 246, 249, 0) 60%);
+  }
+}
+@media (min-width: 1366px) {
+  .banner__simple .banner__inner1 {
     bottom: 0;
     width: 71%;
   }
