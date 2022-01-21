@@ -473,6 +473,7 @@
 @media (min-width: 1366px) {
   .banner__simple .banner__inner {
     bottom: 0;
+    width: 71%;
   }
 }
 @media (min-width: 1024px) {
