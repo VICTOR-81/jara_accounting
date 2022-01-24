@@ -373,40 +373,6 @@
         width: calc(60% + 80px);
       }
     }
-    // .banner__inner1{
-    //   img{
-    //     width: 100%;
-    //     height: 100%;
-    //   }
-    //   @media (min-width: 1024px) {
-    //     width: calc(60% + 40px);
-    //     bottom: 0px;
-    //     top: 0px;
-    //     margin-right: -40px;
-    //     border-radius: 0;
-    //     max-width: 100%;
-    //     background-repeat: no-repeat;
-    //     background-position: top center;
-    //     background-size: cover;
-    //     &::after{
-    //       position: absolute;
-    //       content: '';
-    //       top: 0;
-    //       right: 0;
-    //       width: 100%;
-    //       height: 100%;
-    //       background-image: linear-gradient(90.77deg, #F3F6F9 16%, rgba(243, 246, 249, 0) 60%);
-    //     }
-    //   }
-    //   @media (min-width: 1366px) {
-    //     bottom: 0;
-    //     width: calc(71% + 40px);
-    //   }
-    //   @media screen and (min-width: 1440px) {
-    //     margin-right: -80px;
-    //     width: calc(71% + 80px);
-    //   }
-    // }
     .banner__btn{
       @media screen and (min-width: 1024px) {
         margin-bottom: 0;

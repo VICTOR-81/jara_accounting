@@ -1,0 +1,441 @@
+.tile {
+  background-color: #F3F6F9;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.ip__status-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .ip__status-title {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .ip__status-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 135%;
+    margin-bottom: 38px;
+  }
+}
+.ip__status-tile {
+  text-align: center;
+  padding-top: 29px;
+  padding-bottom: 28px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #485B63;
+}
+@media screen and (min-width: 1024px) {
+  .ip__status-tile {
+    max-width: 400px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 145%;
+    color: #0B2128;
+  }
+}
+
+.ip__open-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .ip__open-title {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .ip__open-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 135%;
+    margin-bottom: 38px;
+  }
+}
+.ip__open-tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (min-width: 1024px) {
+  .ip__open-tile {
+    padding: 48px 40px 56px;
+  }
+}
+.ip__open-tile_title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .ip__open-tile_title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+  }
+}
+.ip__open-tile_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  color: #485B63;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .ip__open-tile_text {
+    margin-bottom: 40px;
+  }
+}
+.ip__open-tile_link {
+  height: 69px;
+  background-color: #54B7E3;
+  width: 100%;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 145%;
+  color: #FCFDFF;
+}
+@media screen and (min-width: 1024px) {
+  .ip__open-tile_link {
+    color: #0B2128;
+    width: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid #CCD1D4;
+    background-color: transparent;
+  }
+}
+
+.vzone-title,
+.taxplan-title,
+.needforaccounting-title,
+.featuresofaccounting-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .vzone-title,
+.taxplan-title,
+.needforaccounting-title,
+.featuresofaccounting-title {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .vzone-title,
+.taxplan-title,
+.needforaccounting-title,
+.featuresofaccounting-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 135%;
+    margin-bottom: 38px;
+  }
+}
+.vzone-tile,
+.taxplan-tile,
+.needforaccounting-tile,
+.featuresofaccounting-tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+@media screen and (min-width: 1024px) {
+  .vzone-tile,
+.taxplan-tile,
+.needforaccounting-tile,
+.featuresofaccounting-tile {
+    padding: 48px 40px 56px;
+  }
+}
+.vzone-tile_title,
+.taxplan-tile_title,
+.needforaccounting-tile_title,
+.featuresofaccounting-tile_title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .vzone-tile_title,
+.taxplan-tile_title,
+.needforaccounting-tile_title,
+.featuresofaccounting-tile_title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+  }
+}
+.vzone-tile_text,
+.taxplan-tile_text,
+.needforaccounting-tile_text,
+.featuresofaccounting-tile_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  color: #485B63;
+}
+
+@media screen and (min-width: 1024px) {
+  .taxplan-title {
+    max-width: 665px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .taxplan-tile_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+  }
+}
+
+.listconsultation__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .listconsultation__title {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .listconsultation-tile {
+    padding: 0;
+    max-width: 365px;
+  }
+}
+.listconsultation-tile_link-desktop {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .listconsultation-tile_link-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 145%;
+    color: #54B7E3;
+  }
+}
+.listconsultation-tile_link-mobile {
+  width: 100%;
+  height: 69px;
+  background-color: #54B7E3;
+  margin-top: 32px;
+  border-radius: 10px;
+  color: #FCFDFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 145%;
+}
+@media screen and (min-width: 1024px) {
+  .listconsultation-tile_link-mobile {
+    display: none;
+  }
+}
+.listconsultation-tile_title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+  line-height: 125%;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .listconsultation-tile_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    margin-bottom: 10px;
+  }
+}
+.listconsultation-tile_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  color: #485B63;
+}
+@media screen and (min-width: 1024px) {
+  .listconsultation__wrapper {
+    padding: 56px 70px 70px;
+    background-color: #F3F6F9;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .listconsultation__wrapper-left {
+    margin-right: 45px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .listconsultation__wrapper-left {
+    margin-right: 90px;
+  }
+}
+.listconsultation__wrapper-right .tile:not(:first-child) {
+  margin-top: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .listconsultation__wrapper-right .tile:not(:first-child) {
+    margin-top: 28px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .listconsultation__wrapper-right {
+    margin-left: 45px;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .listconsultation__wrapper-right {
+    margin-left: 90px;
+  }
+}
+
+@media (min-width: 600px) {
+  .featuresofaccounting__tile:nth-child(1) {
+    grid-column: 1/span 2;
+    grid-row: 1;
+  }
+  .featuresofaccounting__tile:nth-child(4) {
+    grid-column: 1/span 2;
+    grid-row: 3;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .featuresofaccounting__tile {
+    padding: 70px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .featuresofaccounting__tile:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 16px;
+  }
+}
+.featuresofaccounting__tile:first-child img {
+  margin-bottom: -24px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 600px) {
+  .featuresofaccounting__tile:first-child img {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .featuresofaccounting__tile:first-child img {
+    margin-bottom: -70px;
+    margin-top: -47px;
+  }
+}
+.featuresofaccounting__tile:first-child .featuresofaccounting__tile-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 600px) {
+  .featuresofaccounting__tile:first-child .featuresofaccounting__tile-inner {
+    width: 50%;
+  }
+}
+.featuresofaccounting__tile:first-child .featuresofaccounting-tile_title,
+.featuresofaccounting__tile:first-child .featuresofaccounting-tile_text {
+  max-width: 451px;
+}
+.featuresofaccounting__tile:last-child {
+  overflow-x: hidden;
+}
+@media screen and (min-width: 600px) {
+  .featuresofaccounting__tile:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 16px;
+  }
+}
+.featuresofaccounting__tile:last-child img {
+  padding-top: 24px;
+  min-width: 335px;
+  min-height: 160px;
+}
+@media screen and (min-width: 600px) {
+  .featuresofaccounting__tile:last-child img {
+    margin-right: -110px;
+    padding-top: 0;
+  }
+}
+.featuresofaccounting__tile:last-child .featuresofaccounting__tile-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 600px) {
+  .featuresofaccounting__tile:last-child .featuresofaccounting__tile-inner {
+    width: 50%;
+  }
+}
+.featuresofaccounting__tile:last-child .featuresofaccounting-tile_title,
+.featuresofaccounting__tile:last-child .featuresofaccounting-tile_text {
+  max-width: 451px;
+}
