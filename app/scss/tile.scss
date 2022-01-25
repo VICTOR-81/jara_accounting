@@ -530,4 +530,11 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
+  &-tile{
+    &_text{
+      p + p{
+        margin-top: 16px;
+      }
+    }
+  }
 }
