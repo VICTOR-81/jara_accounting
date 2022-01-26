@@ -1,0 +1,60 @@
+@import 'vars';
+
+.help{
+  &__title{
+    @include h1-mobile;
+    margin-bottom: 24px;
+    @media screen and (min-width: 768px) {
+      font-size: 36px;
+    }
+    @media screen and (min-width: 1024px) {
+      @include h1-135;
+      margin-bottom: 4px;
+    }
+  }
+  &__wrapper{
+    border-top: 1px solid $line;
+    @media screen and (min-width: 768px) {
+      border-top: transparent;
+    }
+  }
+  &__item{
+    &-wrapper{
+      border-bottom: 1px solid $line;
+      cursor: pointer;
+    }
+    &-title{
+      padding-top: 24px;
+      padding-bottom: 24px;
+      
+      padding-right: 40px;
+      @include h14;
+      color: #3E3E3E;
+      position: relative;
+      &::after{
+        position: absolute;
+        content: url('../images/plus-icon.svg');
+        right: 0;
+        z-index: 1;
+        top: 50%;
+        transform: translateY(-50%);
+        @media screen and (min-width: 768px) {
+          content: url('../images/arrow-footer-down.svg');
+        }
+      }
+      @media screen and (min-width: 768px) {
+        @include h8;
+      }
+      @media screen and (min-width: 1024px) {
+        padding-top: 34px;
+        padding-bottom: 36px;
+      }
+    }
+    &-text{
+      @include h16;
+      color: $secondary;
+      max-height: 0;
+      overflow: hidden;
+    }
+  }
+}
