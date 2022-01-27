@@ -22,24 +22,27 @@
     &-wrapper{
       border-bottom: 1px solid $line;
       cursor: pointer;
+      position: relative;
     }
     &-title{
       padding-top: 24px;
       padding-bottom: 24px;
-      
       padding-right: 40px;
       @include h14;
       color: #3E3E3E;
       position: relative;
+      display: flex;
+      align-items: center;
       &::after{
         position: absolute;
         content: url('../images/plus-icon.svg');
+        width: 32px;
+        height: 32px;
         right: 0;
         z-index: 1;
-        top: 50%;
-        transform: translateY(-50%);
         @media screen and (min-width: 768px) {
           content: url('../images/arrow-footer-down.svg');
+          width: 17px;
         }
       }
       @media screen and (min-width: 768px) {
@@ -55,6 +58,13 @@
       color: $secondary;
       max-height: 0;
       overflow: hidden;
+      transition: all .5s;
     }
+  }
+}
+.rotate::after{
+  transform: rotate(45deg);
+  @media screen and (min-width: 768px) {
+    transform: rotate(180deg);
   }
 }
